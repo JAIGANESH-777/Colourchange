@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Color</title>
+  </head>
+  <body>
+    <h1>Change Color</h1>
+    <button
+      id="color"
+      style="background-color: red"
+      onclick="changeColor('red')"
+    >
+      Red
+    </button>
+    <button
+      id="bcolor"
+      style="background-color: blue"
+      onclick="changeColor('blue')"
+    >
+      Blue
+    </button>
+    <button
+      id="gcolor"
+      style="background-color: green"
+      onclick="changeColor('green')"
+    >
+      Green
+    </button>
+    <button class="reset" onclick="resetColor()">Reset</button>
+
+    <style>
+      body {
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        margin: 150px;
+      }
+      button {
+        padding: 10px;
+        margin: 6px;
+      }
+    </style>
+    <!-- Move the script here -->
+    <script>
+      function changeColor(color) {
+        document.body.style.backgroundColor = color;
+      }
+
+      function resetColor() {
+        document.body.style.backgroundColor = "white"; // or any default color
+      }
+    </script>
+  </body>
+</html>
